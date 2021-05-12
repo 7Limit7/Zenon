@@ -10,7 +10,7 @@ module.exports = {
   permissions: ["SEND_MESSAGES"],
   description: "Get the weather of anywhere",
   category: "fun",
-  usage: "weathet <>",
+  usage: "-weather <location>",
   execute: (message, args, cmd, client, Discord) => {
 
 

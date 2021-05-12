@@ -1,7 +1,9 @@
 module.exports = {
     name: 'purge',
+    aliases: ['clear'],
     category: 'moderation',
     description: "Removes messages from chat!",
+    usage:'-purge <amount>',
     async execute(message, args, cmd, client, Discord) {
 
         if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send(new Discord.MessageEmbed().setTitle(':x: ERROR INVALID PERMISSIONS').setDescription('You are missing the permission `MANAGE_MESSAGES` \n\n **EXAMPLES** \n `-purge <amount>` \n `-purge 1` \n `-purge 100`'));

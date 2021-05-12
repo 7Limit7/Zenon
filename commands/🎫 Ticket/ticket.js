@@ -1,6 +1,6 @@
 module.exports = {
     name: "ticket",
-    aliases: [],
+    aliases: ['open', 'ticketnew', 'newticket', 'openticket'],
     permissions: [],
     category: 'moderation',
     description: "open a ticket!",

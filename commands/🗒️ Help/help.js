@@ -27,7 +27,7 @@ module.exports = {
                 let data = new Object();
 
                 data = {
-                    name: dir, 
+                    name: dir,
                     value: cmds.length === 0 ? 'In Progress' : cmds.join(' '),
                 },
 

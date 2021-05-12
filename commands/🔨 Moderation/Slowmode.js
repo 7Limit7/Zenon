@@ -1,9 +1,11 @@
 const Discord = require('discord.js');
 module.exports = {
     name: 'slowmode',
+    aliases:['slowmo'],
     permissions: ["MANAGE_MESSAGES"],
     category: 'moderation',
     description: 'Sets SlowMode for a Channel',
+    usage: '-slowmode 1 > 100 | -slowmode 1 < 100',
 async execute(message, args){
     if (!message.member.hasPermission("BAN_MEMBERS")){
         messages.channel.send(new Discord.MessageEmbed() .setDescription('You Cannot do that, Missing Permissions') .setColor('RED'))

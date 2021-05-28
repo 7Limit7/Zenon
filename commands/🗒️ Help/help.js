@@ -38,12 +38,11 @@ module.exports = {
 
             const helpEmbed = new Discord.MessageEmbed()
                 .setTitle('Help Menu')
+                .setDescription(`Use \`${prefix}<command name> to get information! \n **[Support Server](https://discord.gg/jrYFnxjm6M)**`)
                 .addFields(categories)
-                .setDescription(`Use \`${prefix}<command name> to get information!`)
                 .setFooter(client.user.username, client.user.displayAvatarURL())
                 .setColor('#6000ff')
                 .setTimestamp()
-
             message.channel.send(helpEmbed)
         } else {
             const command = client.commands.get(args[0].toLowerCase()) || client.commands.find(c = c.aliases && c.aliases.includes(args[0].toLowerCase()));
